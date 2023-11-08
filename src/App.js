@@ -1,14 +1,14 @@
 import "./App.css";
-import About from "./Components/About";
+// import About from "./Components/About";
 import Alert from "./Components/Alert";
 import Navbar from "./Components/Navbar";
 import Textform from "./Components/Textform";
 import React, { useState } from "react";
-import {
+// import {
   
-  Routes,
-  Route
-} from "react-router-dom";
+//   Routes,
+//   Route
+// } from "react-router-dom";
 
 
 function App() {
@@ -34,15 +34,15 @@ function App() {
       <Alert Alert={alert} />
       
         <div className="container">
-
-          <Routes>
-            <Route path="/" element={<Textform showAlert={showAlert} heading="Enter text to Evaluate" />}>
+        <Textform showAlert={showAlert} heading="Enter text to Evaluate" />
+          {/* <Routes>
+            <Route path="/" element={}>
               
             </Route>
             <Route path="/about" element={<About/>}>
             </Route>
             
-          </Routes>
+          </Routes> */}
         </div>
       
       
